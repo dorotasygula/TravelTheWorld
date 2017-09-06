@@ -1,0 +1,225 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+container-fluid
+{
+	width: 100%;
+	
+}
+
+.inner {
+	padding: 0px 50px;
+	padding-bottom: 15px;
+	display: inline-block;
+	background-color: #ccffff;
+	width: 100%;
+	height: auto;
+	
+	
+}
+
+.inner ul li
+{
+	list-style-type: none;
+	font-family: 'Just Another Hand', cursive;
+	font-size: 50px;
+	 transition: font 0.3s ease;
+	 
+	
+}
+
+.inner ul li:hover
+{
+	list-style-type: none;
+	font-family: 'Just Another Hand', cursive;
+	font-size: 60px;
+	cursor: pointer;
+	
+	
+}
+
+.inner h2
+{
+	letter-spacing: 2px;
+	
+}
+h2
+{
+	font-size: 20px;
+	color: white;
+}
+1
+
+h3 {
+  font-family: 'Just Another Hand', cursive;
+}
+
+
+h2
+{
+	font-size: 20px;
+	color: white;
+}
+1
+
+h3 {
+  font-family: 'Just Another Hand', cursive;
+}
+
+
+.circle {
+    
+    height: 60px;
+    width: 155px;
+    line-height: 60px;
+
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+h1{
+font-size: 60px;
+font-family: 'Futura';
+color: #ffff;
+text-shadow: 0 0 5px #33ffff, 0 0 10px #fff, 0 0 20px #33ffff, 0 0 30px blue, 0 0 40px blue, 0 0 55px #ff0080, 0 0 75px blue;
+ transition: font 0.3s ease
+
+}
+
+h1:hover{
+font-size: 50px;
+cursor: pointer;
+font-family: 'Futura';
+color: #ffff;
+text-shadow: 0 0 5px #33ffff, 0 0 10px #fff, 0 0 20px #33ffff, 0 0 30px blue, 0 0 40px blue, 0 0 55px #ff0080, 0 0 75px blue;
+
+}
+
+.myimg
+{
+  display: block;
+  max-width: 70%;
+  height: auto;
+  max-height: 70%;
+  
+}
+
+.myborder
+{
+    border: 3px solid;
+    padding: 0;
+	border-color: green;
+	 
+
+}
+.imgwrapper {
+   width: 70%;
+   height: 70%;
+    margin: 0 auto;
+	margin-top: 40px;
+	
+	 
+}
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 30px;
+}
+
+div.cont {
+  text-align: center;
+  padding: 10px 20px;
+}
+div.polaroid:hover{
+	color: #000080;
+	 transform: scale(1.2, 1.2);
+}
+
+.circle2 {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px; 
+	margin: 0 auto;
+	margin-top: 40px;
+	background: #ccffff;
+	position: relative;
+}
+
+.circleText
+{
+	left: 30px;
+	top: 30px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.planet {
+    
+    /* 
+     * Make the initial position to be the center of the circle you want this
+     * object follow.
+     */
+    position: absolute;
+    left: 300px;
+    top: 110px;
+
+    /*
+     * Sets up the animation duration, timing-function (or easing)
+     * and iteration-count. Ensure you use the appropriate vendor-specific 
+     * prefixes as well as the official syntax for now. Remember, tools like 
+     * CSS Please are your friends!
+     */
+    -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+            animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+    
+    
+    
+}
+
+/*
+ * Set up the keyframes to actually describe the begining and end states of 
+ * the animation.  The browser will interpolate all the frames between these 
+ * points.  Again, remember your vendor-specific prefixes for now!
+ */
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+}
+
+.planetWrapper
+{
+	height: 300px;
+	width: 300px;
+}
